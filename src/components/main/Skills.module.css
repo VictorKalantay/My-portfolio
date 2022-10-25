@@ -1,0 +1,93 @@
+.container {
+    position: relative;
+    display: flex;
+    width: 1040px;
+    height: 100%;
+    padding: 50px 20px 0;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+
+.skillsTitle {
+    font-size: 1.6em;
+    line-height: 120%;
+    text-align: left;
+}
+.skillsBlock:last-of-type .skillsTitle {
+    text-align: right;
+}
+
+.skillsList {
+    font-size: 1.4em;
+    line-height: 160%;
+    text-align: left;
+    list-style: none;
+    padding-inline-start: 0;
+    white-space: nowrap;
+
+}
+.skillsBlock:last-of-type .skillsList {
+    text-align: right;
+}
+.emptyBlock {
+    width: 100%;
+    height: 100%;
+}
+
+.skillsElement:hover {
+    font-size: 1.8em;
+    line-height: 200%;
+    text-align: right;
+}
+.skillsElementBg {
+    position: absolute;
+    top: -1000%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    height: 60%;
+    transition: height 1s,
+                opacity 1s,
+                top 0s;
+    user-select: none;
+
+}
+.skillsElement:hover .skillsElementBg {
+
+    opacity: 0.2;
+    height: 100%;
+    top: 60%;
+    transition: height 1s,
+                opacity 1s,
+                top 0s;
+    z-index: -1;
+}
+.emptyBlock {
+    width: 100%;
+    height: 100%;
+}
+.skillsBg {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    height: 100%;
+    transition: height 1s,
+    opacity 1s,
+    top 0s;
+    user-select: none;
+
+}
+.skillsBlock:hover ~ .skillsBg {
+
+    opacity: 0;
+    height: 60%;
+    top: -1000%;
+    transition: height 1s,
+    opacity 1s,
+    top 0s;
+   }
+

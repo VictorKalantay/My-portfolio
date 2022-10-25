@@ -1,0 +1,56 @@
+.about-container {
+    position: relative;
+    display: flex;
+    width: 1140px;
+    height: 100%;
+    padding: 20px 20px 0;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+.photo-container {
+    width: 490px;
+    height: 550px;
+    background-color: white;
+    transform: rotate(-10deg);
+    box-shadow:  2px 2px 10px 1px rgba(0, 0, 0, 0.3);
+    margin-right: 90px;
+    font-family: 'Cookie', cursive;
+    font-size: 36px;
+    color: #24237d;
+    flex: 0 0 auto;
+}
+.photo {
+    margin: 30px auto;
+    position: relative;
+    width: 430px;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 4px;
+    box-shadow: inset 10px 10px 20px white;
+    z-index: 101;
+    object-fit: initial;
+}
+
+canvas {
+    position: absolute;
+    z-index: 0;
+    border-radius: 4px;
+    object-fit: initial;
+
+}
+
+.about-content {
+    font-size: 1.3em;
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 40px;
+}
+
+.about-content:first-of-type {
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    font-size: 1.4em;
+
+}
