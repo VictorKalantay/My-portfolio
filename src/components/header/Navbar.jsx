@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Route, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {BsInfoCircle} from 'react-icons/bs'
 import {GiSkills} from 'react-icons/gi'
 import {MdFolderShared} from 'react-icons/md'
@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className={classes.navbar}>
             <div className={classes.list}>
-                <NavLink to={'/My-portfolio/'}  className = { navData => navData.isActive ? classes.active : classes.item }>
+                <NavLink  to={'/My-portfolio/'}  className = { navData => navData.isActive ? classes.active : classes.item }>
                     <div>
                         <span className={classes.icon}><BsInfoCircle color="white"/></span>
                         <span className={classes.text}>About me</span>

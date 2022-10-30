@@ -3,7 +3,7 @@
     display: flex;
     width: 1140px;
     height: 100%;
-    padding: 20px 20px 0;
+    padding: 50px 20px 0;
     margin: 0 auto;
     justify-content: flex-start;
 }
@@ -19,6 +19,7 @@
     font-size: 36px;
     color: #24237d;
     flex: 0 0 auto;
+    z-index: 3;
 }
 .photo {
     margin: 30px auto;

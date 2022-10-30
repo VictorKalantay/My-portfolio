@@ -1,6 +1,10 @@
 .header {
+    position: relative;
     background: linear-gradient(transparent 100px, white 100px, white),
-    linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(13, 3, 3) 10%, rgb(190, 51, 51) 50%, rgb(0, 0, 0) 90%);
+                linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(13, 3, 3) 10%, rgb(190, 51, 51) 50%, rgb(0, 0, 0) 90%),
+                linear-gradient(transparent 100px, white 100px, white);
+    box-shadow:   30px 30px 10px 10px white;
+    z-index: 2;
 }
 
 .container {
@@ -10,6 +14,7 @@
     padding: 0 20px;
     max-width: 1240px;
     margin: 0 auto 30px;
+
 
 }
 

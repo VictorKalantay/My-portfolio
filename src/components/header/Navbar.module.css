@@ -1,5 +1,7 @@
 .navbar {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 480px;
     height: 100px;
     display: flex;

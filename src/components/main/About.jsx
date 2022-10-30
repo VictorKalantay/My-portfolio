@@ -5,6 +5,11 @@ import Effect from "../../assets/image/main/about/effects.jpg"
 import Photo1 from "../../assets/image/main/about/photo_on_park2.jpg"
 import Photo2 from "../../assets/image/main/about/photo_with_blur2.jpg"
 
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
+
+const FadeIn = styled.div`animation: 3s ${keyframes`${fadeIn}`} `;
+
 
 const About = () => {
     const img = useRef(null)
@@ -18,6 +23,7 @@ const About = () => {
         })
     })
     return (
+        <FadeIn>
         <div className="about-container">
             <div className="photo-container">
                 <div ref={img} className="photo"></div>
@@ -46,6 +52,7 @@ const About = () => {
 
             </div>
         </div>
+            </FadeIn>
     )
 }
 

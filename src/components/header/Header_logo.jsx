@@ -6,7 +6,7 @@ const Header_logo = () => {
             <div className={classes.logo}>
                 <img src={Photo} alt="photo_logo"/>
             </div>
-            <h3>Web developer</h3>
+            <h3>Web developer / React</h3>
         </div>
     )
 }

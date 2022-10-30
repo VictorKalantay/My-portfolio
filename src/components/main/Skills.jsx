@@ -23,8 +23,18 @@ import MOTIVATION from '../../assets/image/main/skills/motivation.png';
 import TEAMWORK from '../../assets/image/main/skills/teamwork.png';
 import DEPENDABILITY from '../../assets/image/main/skills/dependability.png';
 import SKILLS from '../../assets/image/main/skills/skills.png';
+
+
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
+
+const FadeIn = styled.div`animation: 3s ${keyframes`${fadeIn}`} `;
+
+
+
 const Skills = () => {
     return (
+        <FadeIn>
         <div className={classes.container}>
             <div className={classes.skillsBlock}>
                 <h3 className={classes.skillsTitle}>Technical skills</h3>
@@ -57,6 +67,7 @@ const Skills = () => {
 
 
         </div>
+            </FadeIn>
     );
 };
 
