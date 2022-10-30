@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_portfolio=self.webpackChunkmy_portfolio||[]).push([[125],{4125:function(o,e,s){o.exports=s.p+"static/media/WindowsHouse.6461d05cfe127565640c.png"}}]);

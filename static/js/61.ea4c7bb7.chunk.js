@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_portfolio=self.webpackChunkmy_portfolio||[]).push([[61],{61:function(e,o,p){e.exports=p.p+"static/media/DHL.51489afa69ea952eeb67.png"}}]);
