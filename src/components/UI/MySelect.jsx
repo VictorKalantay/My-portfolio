@@ -4,6 +4,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { red, green, blue, orange, grey} from '@mui/material/colors';
 
 const MySelect = ({options, defaultValue, value, onChange}) => {
 
@@ -11,8 +12,8 @@ const MySelect = ({options, defaultValue, value, onChange}) => {
     return (<>
 
             <Box >
-                <FormControl  variant="standard"  sx={{ m: 1, minWidth: 120 }}>
-                    <InputLabel id="select-label">{defaultValue}</InputLabel>
+                <FormControl  variant="standard"  sx={{ m: 1, minWidth: 120}}>
+                    <InputLabel id="select-label" style={{color: 'var(--primaryColor)'}}>{defaultValue}</InputLabel>
                     <Select
                         labelId="select-label"
                         id="simple-select"

@@ -7,7 +7,7 @@
     position: relative;
     width: 1300px;
     height: 130px;
-    background-image: linear-gradient(90deg, white, #ddd 15%, rgba(190, 51, 51, 0.2), #ddd 85%, white);
+    background-image: linear-gradient(90deg, var(--secondaryColor), #ddd 15%, var(--centralColorTransparent), #ddd 85%, var(--secondaryColor));
     background-color: #ddd;
     padding: 20px 120px;
     flex: 0 0 auto;
@@ -26,7 +26,7 @@
 }
 
 .title:first-letter {
-    color: #A60E00;
+    color: var(--firstLetterOnWhite);
 }
 
 .description {

@@ -39,15 +39,16 @@ a div {
     font-size: 2em;
     text-align: center;
     transition: 0.5S;
-    color: black;
+    color: var(--Dark);
 }
 .active .icon {
     transform: translateY(50px);
+    color: var(--iconColor)
 }
 .text {
     white-space: nowrap;
     position: absolute;
-    color: white;
+    color: var(--navbarText);
     font-weight: 700;
     font-size: 1em;
     letter-spacing: 0.05em;
@@ -58,6 +59,7 @@ a div {
 .active .text {
     opacity: 1;
     transform: translateY(-20px);
+
 }
 .indicator {
     position: absolute;
@@ -66,9 +68,9 @@ a div {
     left: 50px;
     width: 80px;
     height: 80px;
-    background: black;
+    background: var(--indicator);
     border-radius: 50%;
-    border: 6px solid white;
+    border: 6px solid var(--secondaryColor);
     transition: 0.5s;
 }
 .indicator::before {
@@ -80,7 +82,7 @@ a div {
     height: 25px;
     background: transparent;
     border-bottom-right-radius: 20px;
-    box-shadow: 1px 14px 0 0 white;
+    box-shadow: 1px 14px 0 0 var(--secondaryColor);
 
 }
 
@@ -93,7 +95,7 @@ a div {
     height: 25px;
     background: transparent;
     border-bottom-left-radius: 20px;
-    box-shadow: -1px 14px 0 0 white;
+    box-shadow: -1px 14px 0 0 var(--secondaryColor);
 
 }
 

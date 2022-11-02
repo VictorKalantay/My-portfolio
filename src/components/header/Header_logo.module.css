@@ -9,7 +9,6 @@
 .logo {
     width:  150px;
     height: 150px;
-    color: green;
     flex: 0 0 auto;
 }
 .logo img {
@@ -22,10 +21,11 @@ h3 {
     font-size: 1.5rem;
     font-weight: 400;
     white-space: nowrap;
+    color: var(--primaryColor);
 
 }
 h3::first-letter {
-    color: #A60E00;
+    color: var(--firstLetter);
     font-weight: 700;
 
 }

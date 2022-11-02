@@ -31,7 +31,7 @@ const useVisits = () => {
                             item.ip === IPv4
                         )
                         if (sortedDataArr.length > 0) {
-                            if ((sortedDataArr[sortedDataArr.length - 1].date - Date.now()) > 43200000) {
+                            if ((Date.now() - sortedDataArr[sortedDataArr.length - 1].date) > 43200000) {
                                 postData()
                             }
                         } else postData()

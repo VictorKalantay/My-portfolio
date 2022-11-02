@@ -6,13 +6,20 @@ import About from "./components/main/About";
 import Skills from "./components/main/Skills";
 import Portfolio from "./components/main/Portfolio";
 import Education from "./components/main/Education";
+import useThemeChange from "./hooks/useThemeChange";
 
 
 
 
 function App() {
+    const { handleThemeChangeFromStorage, handleColorChangeFromStorage} = useThemeChange()
 
-   return (
+    handleColorChangeFromStorage()
+    handleThemeChangeFromStorage()
+
+
+       return (
+
         <BrowserRouter>
             <div className="App">
                 <Header/>

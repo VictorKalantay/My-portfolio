@@ -1,3 +1,53 @@
+:root {
+    --Light: black;
+    --Dark: white;
+    --primaryColor: black;
+    --secondaryColor: white;
+    --secondaryColorLight: white;
+    --secondaryColorDark: rgb(55,55,55);
+    --centralColor: rgb(190, 51, 51);
+    --centralColorRed: rgb(190, 51, 51);
+    --centralColorBlue: rgb(0,0,200);
+    --centralColorGreen: rgb(0,128,0);
+    --centralColorOrange: rgb(240,140,0);
+    --centralColorGrey: rgb(105,105,105);
+    --centralColorTransparent: rgba(190, 51, 51, 0.3);
+    --centralColorTransparentRed: rgba(190, 51, 51, 0.3);
+    --centralColorTransparentBlue: rgba(0,0,255, 0.3);
+    --centralColorTransparentGreen: rgba(0,128,0, 0.3);
+    --centralColorTransparentOrange: rgba(255,140,0, 0.3);
+    --centralColorTransparentGrey: rgba(105,105,105, 0.3);
+    --firstLetter: rgb(255,0,0);
+    --firstLetterRed: rgb(255,0,0);
+    --firstLetterBlue: rgb(0,191,255);
+    --firstLetterGreen: rgb(0,214,0);
+    --firstLetterOrange: rgb(255,140,0);
+    --firstLetterOnWhite: rgb(139,0,0);
+    --firstLetterOnWhiteRed: rgb(139,0,0);
+    --firstLetterOnWhiteBlue: rgb(0,0,139);
+    --firstLetterOnWhiteGreen: rgb(0,70,0);
+    --firstLetterOnWhiteOrange: rgb(180,100,0);
+
+
+
+
+
+    --iconColor: white;
+    --iconColorLight: white;
+    --iconColorDark: black;
+    --navbarText: white;
+    --colorOnPhoto: #24237d;
+
+    --indicator: black;
+    --secondaryGreenColor: rgb(55,55,55);
+}
+
+
+
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,6 +56,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;
+    background-color: var(--secondaryColor);
 }
 
 code {

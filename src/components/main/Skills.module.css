@@ -27,6 +27,7 @@
     list-style: none;
     padding-inline-start: 0;
     white-space: nowrap;
+    color: var(--primaryColor)
 
 }
 .skillsBlock:last-of-type .skillsList {
@@ -57,12 +58,13 @@
 }
 .skillsElement:hover .skillsElementBg {
 
-    opacity: 0.2;
+    opacity: 0.4;
     height: 100%;
     top: 60%;
     transition: height 1s,
                 opacity 1s,
                 top 0s;
+    filter: blur(4px);
     z-index: -1;
 }
 .emptyBlock {

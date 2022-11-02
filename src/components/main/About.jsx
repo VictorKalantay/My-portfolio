@@ -25,7 +25,7 @@ const About = () => {
     return (
         <FadeIn>
         <div className="about-container">
-            <div className="photo-container">
+            <div className="photo-container" >
                 <div ref={img} className="photo"></div>
                 Victor Kalantay, Kharkiv, Ukraine
             </div>

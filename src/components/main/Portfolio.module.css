@@ -10,7 +10,7 @@
     align-items: center;
     overflow-y: scroll;
     overflow-x: hidden;
-    box-shadow: inset 0 0 10px 10px white;
+    box-shadow: inset 0 0 10px 10px var(--secondaryColor);
 }
 
 .gitWrapper {
@@ -40,9 +40,9 @@
 }
 
 .gitlink a:first-letter {
-    color: #a60e00;
+    color: var(--firstLetter);
 }
 
 .gitlink a:visited {
-    color: black
+    color: var(--primaryColor)
 }
