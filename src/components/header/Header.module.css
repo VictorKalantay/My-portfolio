@@ -3,9 +3,10 @@
     background: linear-gradient(transparent 100px, var(--secondaryColor) 100px,var(--secondaryColor)),
                 linear-gradient(90deg, rgb(0, 0, 0) 10%, var(--centralColor) 50%, rgb(0, 0, 0) 90%),
                 linear-gradient(transparent 100px, var(--secondaryColor) 100px, var(--secondaryColor));
-    box-shadow:   30px 30px 10px 10px var(--secondaryColor);
+    box-shadow:   0 0px 10px 10px var(--secondaryColor);
     z-index: 2;
 }
+
 
 .container {
     position: relative;
@@ -14,9 +15,8 @@
     padding: 0 20px;
     max-width: 1240px;
     margin: 0 auto 30px;
-
-
 }
+
 
 .container:after {
     content: '';
@@ -27,4 +27,33 @@
     height: 2px;
     background-color: var(--primaryColor);
     transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+    .container {
+
+        justify-content: center;
+    }
+}
+@media (max-width: 575px) {
+    .header {
+        position: relative;
+        background: linear-gradient(transparent 80px, var(--secondaryColor) 80px,var(--secondaryColor)),
+        linear-gradient(90deg, rgb(0, 0, 0) 10%, var(--centralColor) 50%, rgb(0, 0, 0) 90%),
+        linear-gradient(transparent 80px, var(--secondaryColor) 80px, var(--secondaryColor));
+    }
+    .container {
+        height: 160px;
+    }
+}
+@media (max-width: 479px) {
+    .header {
+        position: relative;
+        background: linear-gradient(transparent 60px, var(--secondaryColor) 60px,var(--secondaryColor)),
+        linear-gradient(90deg, rgb(0, 0, 0) 10%, var(--centralColor) 50%, rgb(0, 0, 0) 90%),
+        linear-gradient(transparent 60px, var(--secondaryColor) 60px, var(--secondaryColor));
+    }
+    .container {
+        height: 120px;
+    }
 }

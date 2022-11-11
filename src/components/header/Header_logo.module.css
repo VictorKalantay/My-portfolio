@@ -6,26 +6,49 @@
     gap: 20px;
     height: 180px;
 }
+
 .logo {
-    width:  150px;
+    width: 150px;
     height: 150px;
     flex: 0 0 auto;
 }
+
+
+
 .logo img {
     border-radius: 50%;
     width: 100%;
     height: 100%;
 }
+
 h3 {
     align-self: flex-end;
     font-size: 1.5rem;
     font-weight: 400;
     white-space: nowrap;
     color: var(--primaryColor);
+    margin-bottom: 5px;
 
 }
+
 h3::first-letter {
     color: var(--firstLetter);
     font-weight: 700;
 
+}
+
+@media (max-width: 767px) {
+    .logo {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    .logo__container {
+        height: 140px;
+    }
+}
+@media (max-width: 479px) {
+    .logo__container {
+        height: 100px;
+    }
 }

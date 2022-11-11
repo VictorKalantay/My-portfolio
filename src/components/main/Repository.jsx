@@ -8,7 +8,7 @@ const Pulse = styled.div`animation: 4s infinite ${keyframes`${pulse}` }  `;
 
 const Repository = ({created, name, description, homepage}) => {
     return (
-        <a href={homepage} className={classes.container}>
+        <a href={homepage} className={classes.container} target="_blank">
             <div className={classes.content}>
                 <div className={classes.title}>
                     {name}

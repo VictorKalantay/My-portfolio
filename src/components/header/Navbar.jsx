@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import {BsInfoCircle} from 'react-icons/bs'
 import {GiSkills} from 'react-icons/gi'
 import {MdFolderShared} from 'react-icons/md'
-import {IoSchool} from 'react-icons/io5'
+import {RiContactsBookLine} from 'react-icons/ri'
 import classes from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -28,13 +28,14 @@ const Navbar = () => {
                         <span className={classes.text}>Portfolio</span>
                     </div>
                 </NavLink>
-                <NavLink to={'/My-portfolio/education'}  className = { navData => navData.isActive ? classes.active : classes.item }>
+                <NavLink to={'/My-portfolio/contacts'}  className = { navData => navData.isActive ? classes.active : classes.item }>
                     <div>
-                        <span className={classes.icon}><IoSchool /></span>
-                        <span className={classes.text}>Education</span>
+                        <span className={classes.icon}><RiContactsBookLine/></span>
+                        <span className={classes.text}>Contacts</span>
                     </div>
                 </NavLink>
-                <div className={classes.indicator}></div>
+                <div className={classes.indicator}>
+                </div>
             </div>
         </div>
     )

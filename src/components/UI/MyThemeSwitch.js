@@ -6,7 +6,7 @@ import Switch from '@mui/material/Switch';
 import useThemeChange from "../../hooks/useThemeChange";
 
 const ThemeSwitch = styled(Switch)(({theme}) => ({
-    width: 62,
+    width: 82,
     height: 34,
     padding: 7,
     '& .MuiSwitch-switchBase': {
@@ -15,7 +15,7 @@ const ThemeSwitch = styled(Switch)(({theme}) => ({
         transform: 'translateX(6px)',
         '&.Mui-checked': {
             color: '#fff',
-            transform: 'translateX(22px)',
+            transform: 'translateX(42px)',
             '& .MuiSwitch-thumb:before': {
                 backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
                     '#fff',
@@ -75,7 +75,7 @@ export default function MyThemeSwitch() {
     return (
         <FormGroup>
             <FormControlLabel
-                control={<ThemeSwitch sx={{m: 0.5}} defaultChecked={typeof defaultChecked === "boolean" ? defaultChecked : false}/>}
+                control={<ThemeSwitch sx={{m: 0}} defaultChecked={typeof defaultChecked === "boolean" ? defaultChecked : false}/>}
                 onChange={handleChange}
                 label="Theme switch"
             />

@@ -40,7 +40,7 @@ const Portfolio = () => {
         <FadeIn>
             <div className={classes.container}>
                 <div className={classes.gitWrapper}>
-                <div className={classes.gitlink}><a href="https://github.com/VictorKalantay"> My GitHub</a></div>
+                <div className={classes.gitlink}><a href="https://github.com/VictorKalantay" target="_blank"> My GitHub</a></div>
                 <MySelect
                     value={selectedSort}
                     onChange={sortRepos}

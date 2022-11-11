@@ -12,7 +12,14 @@ const MySelect = ({options, defaultValue, value, onChange}) => {
     return (<>
 
             <Box >
-                <FormControl  variant="standard"  sx={{ m: 1, minWidth: 120}}>
+                <FormControl  variant="standard"  sx={{
+                    m: 1,
+                    minWidth: 120,
+                    '& .MuiInputBase-root:before': {borderBottom: '1px solid var(--primaryColor)'},
+                    '& .MuiInputBase-root:after': {borderBottom: '2px solid var(--primaryColor)'},
+                    '& .MuiSelect-select': {color: 'var(--primaryColor)'},
+                    '& .MuiSvgIcon-root': {color: 'var(--primaryColor)'},
+                }}>
                     <InputLabel id="select-label" style={{color: 'var(--primaryColor)'}}>{defaultValue}</InputLabel>
                     <Select
                         labelId="select-label"
@@ -20,6 +27,7 @@ const MySelect = ({options, defaultValue, value, onChange}) => {
                         value={value}
                         label="Sort by"
                         onChange={event => onChange(event.target.value)}
+
                     >
                         {options.map(option =>
                             <MenuItem key={option.value} value={option.value}>

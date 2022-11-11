@@ -10,11 +10,14 @@
     border-radius: 0 0 10px 10px;
     flex: 0 0 auto;
 }
+
+
 .list {
     display: flex;
     width: 400px;
     padding: 0;
 }
+
 a {
     position: relative;
     list-style: none;
@@ -22,6 +25,7 @@ a {
     height: 100px;
     z-index: 1;
 }
+
 a div {
     position: relative;
     display: flex;
@@ -111,3 +115,110 @@ a:nth-child(3).active ~ .indicator {
 a:nth-child(4).active ~ .indicator {
     transform: translateX(calc(100px*3));
 }
+
+@media (max-width: 575px) {
+    .navbar{
+        width: 360px;
+        height: 80px;
+    }
+    .list {
+        width: 280px;
+    }
+    a {
+        width: 70px;
+        height: 80px;
+    }
+    .icon {
+        line-height: 80px;
+        font-size: 1.5em;
+    }
+    .active .icon {
+        transform: translateY(44px);
+    }
+    .active .text {
+        transform: translateY(-10px);
+    }
+    .indicator {
+        bottom: -32px;
+        left: 42px;
+        width: 66px;
+        height: 66px;
+    }
+    .indicator::before {
+        top: 3px;
+    }
+    .indicator::after {
+        top: 3px;
+    }
+    a:nth-child(1).active ~ .indicator {
+        transform: translateX(calc(70px*0));
+    }
+    a:nth-child(2).active ~ .indicator {
+        transform: translateX(calc(70px*1));
+    }
+    a:nth-child(3).active ~ .indicator {
+        transform: translateX(calc(70px*2));
+    }
+    a:nth-child(4).active ~ .indicator {
+        transform: translateX(calc(70px*3));
+    }
+}
+
+@media (max-width: 479px) {
+    .navbar{
+        width: 320px;
+        height: 70px;
+    }
+    .list {
+        width: 240px;
+    }
+    a {
+        width: 60px;
+        height: 60px;
+    }
+    .icon {
+        line-height: 60px;
+        font-size: 1.5em;
+        text-align: center;
+        transition: 0.5S;
+        color: var(--Dark);
+    }
+    .active .icon {
+        transform: translateY(30px);
+    }
+    .text {
+        font-size: 0.75em;
+
+    }
+    .active .text {
+        transform: translateY(-15px);
+    }
+    .indicator {
+        bottom: -17px;
+        left: 45px;
+        width: 50px;
+        height: 50px;
+    }
+    .indicator::before {
+        top: -8px;
+        left: -25px;
+    }
+    .indicator::after {
+        top: -8px;
+        right: -25px;
+    }
+    a:nth-child(1).active ~ .indicator {
+        transform: translateX(calc(60px*0));
+    }
+    a:nth-child(2).active ~ .indicator {
+        transform: translateX(calc(60px*1));
+    }
+    a:nth-child(3).active ~ .indicator {
+        transform: translateX(calc(60px*2));
+    }
+    a:nth-child(4).active ~ .indicator {
+        transform: translateX(calc(60px*3));
+    }
+}
+
+
