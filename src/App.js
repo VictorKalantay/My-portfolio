@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import {Route, BrowserRouter, Routes, useParams} from "react-router-dom";
+import {Route, BrowserRouter, Routes} from "react-router-dom";
 import About from "./components/main/About";
 import Skills from "./components/main/Skills";
 import Portfolio from "./components/main/Portfolio";
@@ -33,6 +33,7 @@ function App() {
                 </main>
                 <Footer />
             </div>
+
 
 
         </BrowserRouter>
