@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import {Route, BrowserRouter, Routes} from "react-router-dom";
+import {Route, BrowserRouter, Routes, useParams} from "react-router-dom";
 import About from "./components/main/About";
 import Skills from "./components/main/Skills";
 import Portfolio from "./components/main/Portfolio";
@@ -14,7 +14,7 @@ function App() {
 
     handleColorChangeFromStorage()
     handleThemeChangeFromStorage()
-
+    const urlParam = useParams()
 
     return (
 
@@ -23,12 +23,10 @@ function App() {
                 <Header/>
                 <main>
                     <Routes>
-                        <Route path='/My-portfolio/' >
-                        <Route index path="" element={<About/>}/>
-                        <Route path="skills" element={<Skills/>}/>
-                        <Route path="portfolio" element={<Portfolio/>}/>
-                        <Route path="contacts" element={<Contacts/>}/>
-                        </Route>
+                        <Route exact path="/My-portfolio" element={<About/>}/>
+                        <Route path="/skills" element={<Skills/>}/>
+                        <Route path="/repositories" element={<Portfolio/>}/>
+                        <Route path="/contacts" element={<Contacts/>}/>
                     </Routes>
                 </main>
                 <Footer/>

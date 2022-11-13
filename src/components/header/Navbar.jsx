@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink } from "react-router-dom";
 import {BsInfoCircle} from 'react-icons/bs'
 import {GiSkills} from 'react-icons/gi'
 import {MdFolderShared} from 'react-icons/md'
@@ -10,25 +10,25 @@ const Navbar = () => {
     return (
         <div className={classes.navbar}>
             <div className={classes.list}>
-                <NavLink  to={'/My-portfolio/'}  className = { navData => navData.isActive ? classes.active : classes.item }>
+                <NavLink  to={'/My-portfolio'}  className = { navData => navData.isActive ? classes.active : classes.item }>
                     <div>
                         <span className={classes.icon}><BsInfoCircle/></span>
                         <span className={classes.text}>About me</span>
                     </div>
                 </NavLink>
-                <NavLink to={'/My-portfolio/skills'}  className = { navData => navData.isActive ? classes.active : classes.item }>
+                <NavLink to={'/skills'}  className = { navData => navData.isActive ? classes.active : classes.item }>
                     <div>
                         <span className={classes.icon}><GiSkills /></span>
                         <span className={classes.text}>Skills</span>
                     </div>
                 </NavLink>
-                <NavLink to={'/My-portfolio/portfolio'}  className = { navData => navData.isActive ? classes.active : classes.item }>
+                <NavLink to={'/repositories'}  className = { navData => navData.isActive ? classes.active : classes.item }>
                     <div>
                         <span className={classes.icon}><MdFolderShared /></span>
                         <span className={classes.text}>Portfolio</span>
                     </div>
                 </NavLink>
-                <NavLink to={'/My-portfolio/contacts'}  className = { navData => navData.isActive ? classes.active : classes.item }>
+                <NavLink to={'/contacts'}  className = { navData => navData.isActive ? classes.active : classes.item }>
                     <div>
                         <span className={classes.icon}><RiContactsBookLine/></span>
                         <span className={classes.text}>Contacts</span>
