@@ -27,7 +27,7 @@ const About = () => {
         <div className="about-container">
             <div className="photo-container" >
                 <div ref={img} className="photo"></div>
-                Victor Kalantay, Kharkiv, Ukraine
+                <p>Victor Kalantay, Kharkiv, Ukraine</p>
             </div>
             <div className="about-text">
                 <p className="about-content">

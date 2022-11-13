@@ -118,6 +118,12 @@ const Form = () => {
                 gap: '30px',
                 color: 'warning.main',
                 colorScheme: 'light',
+                '@media (max-width: 991px)': {
+                 width: '60%'
+            },
+                '@media (max-width: 479px)': {
+                    width: '100%'
+                },
                 '& > :not(style)': {
                     m: 1,
                     width: '100%',

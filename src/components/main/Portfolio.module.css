@@ -2,9 +2,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 1300px;
     max-height: calc(100vh - 320px);
-    padding: 40px 0 0;
+    padding: 40px 20px 0;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -45,4 +45,18 @@
 
 .gitlink a:visited {
     color: var(--primaryColor)
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-height: calc(100vh - 280px);
+    }
+
+}
+
+@media (max-width: 479px) {
+    .container {
+        max-height: calc(100vh - 240px);
+    }
+
 }

@@ -29,6 +29,7 @@ export default function MyRadioBtn() {
         value: item,
         name: 'color-radio-button-demo',
         inputProps: { 'aria-label': item },
+
     });
 
     return (
@@ -37,6 +38,12 @@ export default function MyRadioBtn() {
                    sx={{
                        background: btnBg,
                        color: red[700],
+                       '@media (max-width: 575px)': {
+                        padding: '3px',
+                           '& .MuiSvgIcon-root': {
+                            fontSize: '1.2rem'
+                           }
+                   },
                        '&.Mui-checked': {
                            color: red[600],
                        },
@@ -46,6 +53,12 @@ export default function MyRadioBtn() {
                    sx={{
                        background: btnBg,
                        color: green[700],
+                       '@media (max-width: 575px)': {
+                           padding: '3px',
+                           '& .MuiSvgIcon-root': {
+                               fontSize: '1.2rem'
+                           }
+                       },
                        '&.Mui-checked': {
                            color: green[600],
                        },
@@ -54,6 +67,12 @@ export default function MyRadioBtn() {
                    sx={{
                        background: btnBg,
                        color: blue[700],
+                       '@media (max-width: 575px)': {
+                           padding: '3px',
+                           '& .MuiSvgIcon-root': {
+                               fontSize: '1.2rem'
+                           }
+                       },
                        '&.Mui-checked': {
                            color: blue[600],
                        },
@@ -63,6 +82,12 @@ export default function MyRadioBtn() {
                    sx={{
                        background: btnBg,
                        color: orange[700],
+                       '@media (max-width: 575px)': {
+                           padding: '3px',
+                           '& .MuiSvgIcon-root': {
+                               fontSize: '1.2rem'
+                           }
+                       },
                        '&.Mui-checked': {
                            color: orange[600],
                        },
@@ -73,6 +98,12 @@ export default function MyRadioBtn() {
                 sx={{
                     background: btnBg,
                     color: grey[900],
+                    '@media (max-width: 575px)': {
+                        padding: '3px',
+                        '& .MuiSvgIcon-root': {
+                            fontSize: '1.2rem'
+                        }
+                    },
                     '&.Mui-checked': {
                         color: grey[700],
                     },

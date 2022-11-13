@@ -152,3 +152,39 @@ a:hover .socialsContent  {
     height: 100%;
     gap: 80px;
 }
+
+@media (max-width: 991px) {
+    .feedback {
+        flex-direction: column;
+        align-items: center;
+    }
+    .socials {
+        flex-direction: row;
+        margin-left: 0;
+        order: 2;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 479px) {
+    .container {
+        padding: 20px;
+    }
+    .text {
+        padding-left: 0;
+        text-align: justify;
+    }
+    .text:first-child {
+        margin-bottom: 20px;
+    }
+    .feedback {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .socials {
+        gap: 10px;
+    }
+    .socials li:nth-child(3) {
+        order: -1;
+    }
+}

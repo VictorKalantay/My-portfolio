@@ -9,17 +9,35 @@ const ThemeSwitch = styled(Switch)(({theme}) => ({
     width: 82,
     height: 34,
     padding: 7,
+
+    '@media (max-width: 479px)': {
+        width: 45,
+        height: 25
+    },
+
+    '&  .MuiFormControlLabel-root': {margin: '0 !important '},
     '& .MuiSwitch-switchBase': {
         margin: 1,
         padding: 0,
         transform: 'translateX(6px)',
+        '@media (max-width: 479px)': {
+            transform: 'translateX(0px)'
+        },
         '&.Mui-checked': {
             color: '#fff',
             transform: 'translateX(42px)',
+            '@media (max-width: 479px)': {
+                transform: 'translateX(20px)'
+            },
             '& .MuiSwitch-thumb:before': {
                 backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
                     '#fff',
                 )}" d="M4.2 2.5l-.7 1.8-1.8.7 1.8.7.7 1.8.6-1.8L6.7 5l-1.9-.7-.6-1.8zm15 8.3a6.7 6.7 0 11-6.6-6.6 5.8 5.8 0 006.6 6.6z"/></svg>')`,
+                '@media (max-width: 479px)': {
+                    backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="12" width="12" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
+                        '#fff',
+                    )}" d="M4.2 2.5l-.7 1.8-1.8.7 1.8.7.7 1.8.6-1.8L6.7 5l-1.9-.7-.6-1.8zm15 8.3a6.7 6.7 0 11-6.6-6.6 5.8 5.8 0 006.6 6.6z"/></svg>')`,
+                },
             },
             '& + .MuiSwitch-track': {
                 opacity: 1,
@@ -31,6 +49,11 @@ const ThemeSwitch = styled(Switch)(({theme}) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
         width: 32,
         height: 32,
+        '@media (max-width: 479px)': {
+            width: 20,
+            height: 20,
+
+        },
         '&:before': {
             content: "''",
             position: 'absolute',
@@ -50,6 +73,7 @@ const ThemeSwitch = styled(Switch)(({theme}) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
         borderRadius: 20 / 2,
     },
+
 }));
 
 
@@ -59,10 +83,9 @@ export default function MyThemeSwitch() {
     const [defaultChecked, setDefaultChecked] = useState(isDark)
 
 
-
     const handleChange = (event) => {
         localStorage.setItem('theme', event.target.checked)
-        if(!event.target.checked) {
+        if (!event.target.checked) {
 
             handleThemeChangeOnClick('Light')
         } else {
@@ -75,9 +98,12 @@ export default function MyThemeSwitch() {
     return (
         <FormGroup>
             <FormControlLabel
-                control={<ThemeSwitch sx={{m: 0}} defaultChecked={typeof defaultChecked === "boolean" ? defaultChecked : false}/>}
+                style={{margin: '0'}}
+                control={<ThemeSwitch sx={{m: 0}}
+                                      defaultChecked={typeof defaultChecked === "boolean" ? defaultChecked : false}/>}
                 onChange={handleChange}
-                label="Theme switch"
+                disableTypography={true}
+
             />
 
         </FormGroup>

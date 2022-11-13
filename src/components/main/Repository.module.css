@@ -5,7 +5,7 @@
     text-align: left;
     align-items: flex-start;
     position: relative;
-    width: 1300px;
+    width: 100%;
     height: 130px;
     background-image: linear-gradient(90deg, var(--secondaryColor), #ddd 15%, var(--centralColorTransparent), #ddd 85%, var(--secondaryColor));
     background-color: #ddd;
@@ -13,6 +13,9 @@
     flex: 0 0 auto;
     text-decoration: none;
     margin-bottom: 30px;
+}
+.content {
+     min-width: calc(100% - 270px);
 }
 
 .title {
@@ -33,6 +36,8 @@
     display: block;
     text-align: left;
     margin-bottom: 10px;
+    max-height: 36px;
+    overflow-y: auto;
 }
 
 .created {
@@ -55,4 +60,56 @@
 .image {
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 20px 40px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        padding: 10px 40px;
+    }
+   .imageWrapper {
+       height: 55px;
+       width: 125px;
+       top: 50%;
+       transform: translate(0, 50%);
+   }
+    .content {
+        min-width: calc(100% - 140px);
+    }
+    .title {
+        font-size: 16px;
+    }
+    .description {
+        font-size: 14px;
+        max-height: 100%;
+    }
+}
+
+@media (max-width:575px) {
+
+
+    .title {
+        margin-bottom: 5px;
+    }
+
+    .description {
+        margin-bottom: 5px;
+    }
+}
+@media (max-width:479px) {
+
+    .container {
+        padding: 10px 20px;
+    }
+    .container > div:last-child {
+        display: none;
+    }
+    .content {
+         width: 100%;
+    }
+
 }
