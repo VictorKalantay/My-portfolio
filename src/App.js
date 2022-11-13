@@ -9,27 +9,29 @@ import useThemeChange from "./hooks/useThemeChange";
 import Contacts from "./components/main/Contacts";
 
 
+
+
 function App() {
-    const {handleThemeChangeFromStorage, handleColorChangeFromStorage} = useThemeChange()
+    const { handleThemeChangeFromStorage, handleColorChangeFromStorage} = useThemeChange()
 
     handleColorChangeFromStorage()
     handleThemeChangeFromStorage()
-    const urlParam = useParams()
 
-    return (
+
+       return (
 
         <BrowserRouter>
             <div className="App">
                 <Header/>
                 <main>
                     <Routes>
-                        <Route exact path="/My-portfolio" element={<About/>}/>
-                        <Route path="/skills" element={<Skills/>}/>
-                        <Route path="/repositories" element={<Portfolio/>}/>
-                        <Route path="/contacts" element={<Contacts/>}/>
+                        <Route exact path="/My-portfolio/" element={<About/>}/>
+                        <Route exact path="/My-portfolio/skills" element={<Skills/>}/>
+                        <Route exact path="/My-portfolio/portfolio" element={<Portfolio />} />
+                        <Route exact path="/My-portfolio/contacts" element={<Contacts />}/>
                     </Routes>
                 </main>
-                <Footer/>
+                <Footer />
             </div>
 
 
