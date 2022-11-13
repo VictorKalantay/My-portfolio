@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import {Route, BrowserRouter, Routes} from "react-router-dom";
+import {Route, BrowserRouter, Routes, HashRouter} from "react-router-dom";
 import About from "./components/main/About";
 import Skills from "./components/main/Skills";
 import Portfolio from "./components/main/Portfolio";
@@ -20,15 +20,15 @@ function App() {
 
        return (
 
-        <BrowserRouter>
+        <HashRouter>
             <div className="App">
                 <Header/>
                 <main>
                     <Routes>
-                        <Route exact path="/My-portfolio/" element={<About/>}/>
-                        <Route exact path="/My-portfolio/skills" element={<Skills/>}/>
-                        <Route exact path="/My-portfolio/portfolio" element={<Portfolio />} />
-                        <Route exact path="/My-portfolio/contacts" element={<Contacts />}/>
+                        <Route exact path="/" element={<About/>}/>
+                        <Route exact path="/skills" element={<Skills/>}/>
+                        <Route exact path="/portfolio" element={<Portfolio />} />
+                        <Route exact path="/contacts" element={<Contacts />}/>
                     </Routes>
                 </main>
                 <Footer />
@@ -36,7 +36,7 @@ function App() {
 
 
 
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
