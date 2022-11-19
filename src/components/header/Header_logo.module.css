@@ -1,5 +1,5 @@
 .logo__container {
-    width: auto;
+    width: 100%;
     padding-top: 20px;
     display: flex;
     align-items: center;
@@ -37,9 +37,30 @@ h3::first-letter {
 
 }
 
+.cvLink {
+    height: auto;
+    width: auto;
+    display: block;
+    white-space: nowrap;
+    color: var(--primaryColor);
+    text-decoration: none;
+    align-self: flex-end;
+    position: absolute;
+    bottom: -25px;
+    left: 190px;
+}
+
+
+
+
+
+
 @media (max-width: 767px) {
     .logo {
         display: none;
+    }
+    .cvLink {
+        left: 20px;
     }
 }
 @media (max-width: 575px) {

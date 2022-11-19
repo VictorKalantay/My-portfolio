@@ -7,6 +7,7 @@ const Header_logo = () => {
                 <img src={Photo} alt="photo_logo"/>
             </div>
             <h3>Web developer / React</h3>
+            <a className={classes.cvLink} href="../../assets/CV_Victor_Kalantay.pdf" download="">Download my CV</a>
         </div>
     )
 }

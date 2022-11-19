@@ -201,11 +201,11 @@ a:nth-child(4).active ~ .indicator {
     }
     .indicator::before {
         top: -8px;
-        left: -25px;
+        left: -26px;
     }
     .indicator::after {
         top: -8px;
-        right: -25px;
+        right: -26px;
     }
     a:nth-child(1).active ~ .indicator {
         transform: translateX(calc(60px*0));
