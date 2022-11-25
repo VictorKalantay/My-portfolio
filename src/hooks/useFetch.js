@@ -18,6 +18,7 @@ export default function useFetch(baseUrl) {
                 .catch(error => {
                     setLoading(false);
                     reject(error);
+
                 });
         });
     }
