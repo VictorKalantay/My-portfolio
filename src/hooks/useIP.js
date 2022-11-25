@@ -10,6 +10,9 @@ const useIP = () => {
         useEffect(()=>{
             get('')
                 .then(data => setUserIP(data))
+                .catch(error => {
+                    setUserIP({"country_code":"UA","country_name":"Ukraine","city":"Error get request to IP","postal":"00000","latitude":49.823,"longitude":36.0507,"IPv4":"1.1.1.1","state":"Error get request to IP"})
+                    console.log(error)})
         },[])
 return userIP
 
